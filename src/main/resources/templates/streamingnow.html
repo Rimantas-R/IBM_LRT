@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html  xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
+<title>Now streaming on LRT</title>
+</head>
+<body  class="d-flex flex-column h-100">
+<div class="container">
+<h1>Now on LRT channels:</h1>
+<p>i</p><p>i</p><hr>
+<div th:each="chan: ${channels}">
+<div class="text-primary font-weight-bold" th:text="${chan.chanel}"></div>
+<div th:text="${chan.title}"></div>
+<div class="text-info" th:text="${chan.schedule}"></div>
+
+<hr>
+</div>
+<hr><hr>
+
+
+<p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p>
+<p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p>
+<p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p>
+<p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p>
+<p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p><p>i</p>
+</div>
+<footer class="footer fixed-bottom">
+  <div class="container">
+    <span class="text-muted">© Rimantas Rozga</span>
+  </div>
+</footer>
+</body>
+</html> 

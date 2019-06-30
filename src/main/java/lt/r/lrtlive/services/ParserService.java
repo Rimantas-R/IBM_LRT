@@ -16,13 +16,16 @@ import lt.r.lrtlive.models.LiveItem;
 @Service
 public class ParserService {
 	
-	public void stoutP() throws IOException {
+	public List<LiveItem> stoutP() throws IOException {
 		List<LiveItem> liveItems = new ArrayList<>();
 		Document doc = Jsoup.connect("https://www.lrt.lt/mediateka/tiesiogiai").get();
 		Elements elements = doc.select("#tvprog");
 		
 		int elSize = elements.size();
-		if(elSize==0) {}; //TODO
+		if(elSize==0) {
+			liveItems.add(new LiveItem("something vent wrong"," -- ", " -- "));
+			return liveItems;
+			} 
 			Elements chElements = elements.select(".channel-item");
 			Iterator<Element> chIt = chElements.iterator();
 			Elements schedElements = elements.select(".data-block__text");
@@ -41,6 +44,7 @@ public class ParserService {
 			}
 		
 		System.out.println("Noting?" + elSize);
+		return liveItems;
 	}
 	
 
