@@ -1,0 +1,18 @@
+
+	/LT/
+
+     Šiame aplanke yra du „frontend“ failai.
+   xhttpreq.html failas naudoja „vanilla javascript“. Stilius padarytas naudojant Bootstrap CDN. 
+   r.html failas naudoja „react“. Stilius padarytas naudojant Bootstrap CDN.
+   Juos galima talpinti į serverį (tame pat hoste) arba tiesiog atidaryti naršyklėje.
+
+   Backend'as taip pat turi frontendą adresu http://localhost:8081
+
+       /EN/
+
+    Folder contains two frontends.
+  xhttpreq.html use vanilla javascript and Bootstrap CDN.
+  r.html use react and Bootstrap CDN.
+  They could be utilized both in server (same host) or browser.
+
+  Backend also possess frontend on http://localhost:8081
